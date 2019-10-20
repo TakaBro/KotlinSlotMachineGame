@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.taka.kotlinslotmachine.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_score"
+            android:text="1000"
+            android:textColor="@android:color/white"
+            android:padding="20dp"
+            android:background="@drawable/bg_text_color"/>
+
+    <FrameLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="563dp"
+        android:layout_height="239dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/frame">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <com.example.taka.kotlinslotmachine.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"></com.example.taka.kotlinslotmachine.ImageViewScrolling.ImageViewScrolling>
+
+            <com.example.taka.kotlinslotmachine.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"></com.example.taka.kotlinslotmachine.ImageViewScrolling.ImageViewScrolling>
+
+            <com.example.taka.kotlinslotmachine.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"></com.example.taka.kotlinslotmachine.ImageViewScrolling.ImageViewScrolling>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:src="@drawable/up" />
+
+    <ImageView
+        android:id="@+id/down"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:src="@drawable/down" />
+
+</RelativeLayout>
